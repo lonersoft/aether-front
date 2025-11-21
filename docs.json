@@ -8,10 +8,6 @@
     "dark": "#15803D"
   },
   "description": "🥚 a pterodactyl multiegg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "favicon": "/favicon.svg",
   "thumbnails": {
     "appearance": "dark",
@@ -19,61 +15,66 @@
       "family": "Geist Mono"
     }
   },
-  "navigation": {
-    "tabs": [
+  "styling": {
+    "eyebrows": "section",
+    "codeblocks": {
+      "theme": "catppuccin-mocha"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Geist Mono"
+    }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+  "background": {
+    "decoration": "windows"
+  },
+  "navbar": {
+    "links": [
       {
-        "tab": "Guides",
+        "label": "Dashboard",
+        "href": "https://dashboard.plexdevelopment.net"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Website",
+      "href": "https://plexdevelopment.net"
+    }
+  },
+  "navigation": {
+    "dropdowns": [
+      {
+        "dropdown": "Documentation",
+        "icon": "book-open",
         "groups": [
           {
-            "group": "Getting staaaarted",
+            "group": "Get started",
+            "icon": "rocket",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "dropdown": "API reference",
+        "icon": "square-terminal",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Core endpoints",
+            "icon": "square-terminal",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/get",
+              "api-reference/post",
+              "api-reference/delete"
             ]
           }
         ]
@@ -94,18 +95,38 @@
       ]
     }
   },
-  "navbar": {
+  "footer": {
+    "socials": {
+      "github": "https://github.com/lonersoft/aether"
+    },
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "header": "aether",
+        "items": [
+          {
+            "href": "https://github.com/lonersoft/aether",
+            "label": "GitHub Repository"
+          },
+          {
+            "href": "https://github.com/lonersoft/aether-front",
+            "label": "Docs Repository"
+          }
+        ]
+      },
+      {
+        "header": "Donate",
+        "items": [
+          {
+            "href": "https://hcb.hackclub.com/donations/start/lonersoft",
+            "label": "Donate via HCB"
+          },
+          {
+            "href": "https://hcb.hackclub.com/lonersoft/transactions",
+            "label": "Transparent finances"
+          }
+        ]
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -118,12 +139,5 @@
      "cursor",
      "vscode"
    ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
